@@ -2,6 +2,7 @@
 	<h2>Welcome To Search Center</h2>
 	<h5>Search any movie and series for detail</h5>
 	<br><br>
- 	<input id="Text1" type="text"  runat="server" ng-model="inputVal">
- 	<a href="#/viewMovies">Search</a>
+ 	<input ng-model="id" type="text" id="id" class="search" ng-click="logId()">
+ 	<p>You search for: {{id}}</p>
+ 	<div><a href="#/viewMovies" class="btn btn-success">Search</a></div>
 </div>
