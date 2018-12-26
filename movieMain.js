@@ -16,18 +16,16 @@ myApp.config(function($routeProvider) {
 });
 
 	myApp.controller('movieController', function ($scope, $http) {
-		// var mname =[];
-		// $scope.logId = function($scope) {
-		// 	$scope.mname.push($scope.id);
-		// 	console.log(mname[0]);
-		// 	$scope.mname = $scope.id;
-        
- 	// }
-  //   $scope.mnames = angular.element('#Text1').value;
- 	// console.log($scope.mname);
- 	// var mname = $scope.id;
- 	// $scope.RandomValue = angular.element('#id').val();
-    $http.get('http://www.omdbapi.com/?t='+ $scope.id +'&apikey=51f2bbd8&r=json').success(function (response) {
+		// $scope.formData = {};
+		$scope.message = "hero";
+		$scope.logId = function($scope) {
+			$scope.message = $scope.id;
+			$scope.$apply();
+			// console.log($scope.message);
+		}
+		// console.log($scope.message);
+		// console.log($scope.formData.searchText.$modelValue)
+    	$http.get('http://www.omdbapi.com/?t='+ $scope.message +'&apikey=51f2bbd8&r=json').success(function (response) {
         $scope.movie = response;
     });
 
