@@ -15,7 +15,7 @@ myApp.config(function($routeProvider) {
 		});
 });
 
-myApp.controller('movieController', function ($scope, $http) {
+myApp.controller('movieController', function ($scope, $http, $rootScope) {
 		// $scope.formData = {};
 		// $scope.message = "hero";
 		// $scope.logId = function($scope) {
@@ -36,7 +36,7 @@ myApp.controller('movieController', function ($scope, $http) {
   			}).then(function mySuccess(resp){
   				console.log("success")
   				console.log(resp.data)
-  				$scope.movie = resp.data;
+  				$rootScope.movie = resp.data;
   			},function myError(response){
   				console.log("error");
   			});
