@@ -2,23 +2,13 @@
 <div class="container" style="text-align:center;">
 <div class="row">
    <div class="col-lg-12">
-      <img ng-src="{{movie.Poster}}" alt="" style="width: 300px; height: 300px; border-radius: 50%">
-<!--  <p>Year: {{movie.Year}}</p>
-      <p>Released: {{movie.Released}}</p>
-      <p>Genre: {{movie.Genre}}</p>
-      <p>Writer: {{movie.Writer}}</p>
-      <p>Actors: {{movie.Actors}}</p>
-      <p>Director: {{movie.Director}}</p>
-      <p>Plot: {{movie.Plot}}</p>
-      <p>Type: {{movie.Type}}</p>
-      <p>Total Seasons: {{movie.totalSeasons}}</p>
-      <p ng-hide="movie.Runtime==0">Runtime:{{movie.Runtime}}</p> 
-      <div class="btn btn-dark"><a href="#/home"> Back</a></div> -->
+   <img ng-src="{{movie.Poster}}" alt="" style="width: 300px; height: 300px; border-radius: 50%">
 
-<br><br>
+
+    <br><br>
     <div class="card" style="text-align: center;">
-  	<ul class="list-group list-group-flush">
-  	<li class="list-group-item"><h1>{{movie.Title}}</h1></li>
+  	 <ul class="list-group list-group-flush">
+  	 <li class="list-group-item"><h1>Title: {{movie.Title}}</h1></li>
     <li class="list-group-item"><p>Year: {{movie.Year}}</p></li>
     <li class="list-group-item"><p>Released: {{movie.Released}}</p></li>
     <li class="list-group-item"><p>Genre: {{movie.Genre}}</p></li>
@@ -32,6 +22,6 @@
     <li class="list-group-item"><div class="btn btn-dark" style="color: white"><a href="#/home" style="color: white;"> Back</a></div></li>
   </ul>
   </div>
-   </div>
+  </div>
 </div>
 </div>
